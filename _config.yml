@@ -1,0 +1,12 @@
+# Site settings
+title: Lukas Zilka's blog
+email: 
+description: ""
+baseurl: ""
+url: "http://ticcky.github.io"
+twitter_username: ticcky
+github_username:  ticcky
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
