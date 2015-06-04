@@ -1,28 +1,147 @@
 ---
 layout: default
 ---
+<style type="text/css">
+img.photo, img.logo {
+    display: block;
+    float: left;
+    margin: 5px;
+    margin-top: 0px;
+}
+img.phxoto {
+    margin-left: -170px;
+    width: 150px;
+}
+img.logo {
+    float: right;
+}
+</style>
 
-<div style="float:left; margin-top:5px; margin-right:5px; width: 200px">
-    <img src="/assets/me.jpg">
-    <p>Hi! I'm a PhD student interested in spoken dialog systems and machine learning.
 
-    <h3>My Projects</h3>
+<!--<a href="http://www.mff.cuni.cz/"><img class='logo' src="assets/mff.gif"></a>
+<a href="http://www.cuni.cz/"><img class='logo' src="assets/cuni.gif"></a>-->
+
+<div style="display: block; float: left">
+</div>
+<div class="main post-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"><img class='photo' src="assets/me.jpg"></div>
+            <div class="col-md-6">
+              <p><strong>Hi!</strong> I'm a PhD student interested in spoken dialog systems and machine learning.</p>
+
+              <p>I am interested in natural languages and human communication,
+              particularly I am looking how to teach computers to understand our language and talk to us.
+
+              <p><a href="http://scholar.google.cz/citations?user=JyDBaoUAAAAJ">Google Scholar Publications</a>.
+            </div>
+        </div>
+    </div>
+
+
+
+    <h2>Research Projects</h2>
+
+    <h3><i class="fa fa-diamond"></i> &nbsp; LecTrack: LSTM Dialog State Tracker</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><img src="assets/projs/lstm_dst.png"></div>
+        <div class="col-md-6 text-justify"><p>A dialog state tracker is an important component in modern spoken dialog systems. We present the first trainable incremental dialog state tracker that directly uses automatic speech recognition hypotheses to track the state. It is based on a long short-term memory recurrent neural network, and it is fully trainable from annotated data. The tracker achieves promissing performance on the Method and Requested tracking sub-tasks in DSTC2.
+        <p>(<a href="assets/pubs/tsd2015_lectrack.pdf">paper</a>)
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <h3><i class="fa fa-diamond"></i> &nbsp; ALEX spoken dialog system</h3>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/projs/alex_logo.png" width=200px>
+        </div>
+        <div class="col-md-6 text-justify">
+          <p><a href="http://ufal.mff.cuni.cz/alex">ALEX</a> is an open-source spoken dialog system/framework.
+          <p>It powers our <strong>Public Transportation Information</strong> spoken dialog system, which searches metropolitian and country-wide public transport schedules and provides this information over voice. It runs at the telephone number 800 899 998 (you need to be in the Czech Republic to reach it).
+
+          <ul>
+              <li>
+                  We collected some Czech and English spoken data using our running systems and <a href="assets/pubs/lrc_alex.pdf">give it out</a> Under the CC-BY-SA 3.0 License.
+              </li>
+              <li>
+                  ALEX uses a simple but effective Bayesian belief state update described <a href="assets/pubs/sigdial13_comparison.pdf">in our paper.</a>
+              </li>
+              <li>
+                  We described how we bootstrapped ALEX in a new domain <a href="assets/pubs/sigdial13_alex.pdf">in this paper</a>.
+              </li>
+          </ul>
+          (<a href="https://github.com/UFAL-DSG/alex">code</a>)
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <h3><i class="fa fa-diamond"></i> &nbsp; Explicit Semantic Analysis</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/projs/esa.png" width=200px>
+      </div>
+        <div class="col-md-6 text-justify">
+          <p>We applied Explicit Semantic Analysis for automatic and cross-lingual link discovery in document collections.
+          <p>Won 1st-3rd place at CLLD NTCIR-9 competition
+
+          <p>(<a href="assets/pubs/ijcnlp2011.pdf">paper</a>, <a href="assets/pubs/masters.pdf">thesis</a>, <a href="https://github.com/ticcky/esalib">code</a>).
+      </div>
+      </div>
+    </div>
+
+
+    <h2>Affiliation</h2>
+    <p>I am a PhD student at <a href="http://ufal.mff.cuni.cz/">Institute
+    of Formal and Applied Linguistics</a>
+    at <a href="http://www.mff.cuni.cz/">Faculty of Mathematics and
+    Physics</a> at <a href="http://www.cuni.cz/">Charles University in
+    Prague</a>, Czech Republic. My research topic is modelling of complex
+    statistical dialogue systems, and my thesis advisor
+    is <a href="http://ufal.mff.cuni.cz/~jurcicek">Filip Jurčíček</a>.
+
+    <h2>Misc</h2>
+    <ul class="fa-ul">
+      <li><i class="fa-li fa fa-paw"></i> <a href="http://ticcky.github.com/esalib">ESAlib</a> - my implementation of <a href="http://www.cs.technion.ac.il/~gabr/resources/code/esa/esa.html">Explicit Semantic Analysis</a>; written in Java and C (<a href="assets/pubs/masters.pdf">thesis</a>)</li>
+      <li><i class="fa-li fa fa-paw"></i> <a href="http://code.google.com/p/transltlate/">transLTLate</a> - a tool for transforming English sentences into a LTL formulas (<a href="assets/pubs/bachelor.pdf">thesis</a>)</li>
+      <li><i class="fa-li fa fa-paw"></i> <a href="https://github.com/ticcky/videosucker">videosucker</a> - a tool for extracting videos from packet capture files (.pcap), e.g. from tcpdump</li>
+      <li><i class="fa-li fa fa-paw"></i> <a href="https://github.com/ticcky/theater">thEater</a> - a snake bot that took part in <a href="http://red-bot.rhcloud.com/">RedBot competition</a> organized by Red Hat
+    </ul>
+
+    <h2>Talks</h2>
+    <ul class="fa-ul">
+        <li><i class="fa-li fa fa-newspaper-o"></i> 04/15/2015 - Dialog State Tracking with LSTM's @ IBM Watson Research, Prague</li>
+        <li><i class="fa-li fa fa-newspaper-o"></i> 02/23/2015 - LSTM dialog state tracker @ UFAL, MFF, Prague</li>
+        <li><i class="fa-li fa fa-newspaper-o"></i> 11/09/2014 - <a href="https://github.com/UFAL-DSG/alex/">ALEX dialogue framework</a> at Machine Learning Meet-ups in Prague (<a href="https://www.youtube.com/watch?v=chVnyfNEuGA">video</a>, <a href="http://www.mlmu.cz/wp-content/uploads/2014/11/mlmu3_zilka_platek_dialog_systems.pdf">slides</a>)
+    </ul>
+
+    <h2>Contact</h2>
     <ul>
-      <li>ALEX</li>
-      <li>LSTM Dialog State Tracker</li>
+        <li>email: lukas@zilka.me</li>
+        <li>twitter: <a href="http://twitter.com/lukaszilka">#lukaszilka</a></li>
+        <li>github: <a href="https://github.com/ticcky">https://github.com/ticcky</a>
+        <li>G+: <a href="https://plus.google.com/+LukasZilka9">https://plus.google.com/+LukasZilka9</a>
     </ul>
 </div>
 
-<div class="home">
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <br>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
+<!--
+<p>Hi! I'm a PhD student interested in spoken dialog systems and machine learning.</p>
 
-</div>
+<h3>My Projects</h3>
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-check-square"></i> ALEX</li>
+  <li><i class="fa-li fa fa-check-square"></i> LSTM Dialog State Tracker</li>
+</ul>
+
+-->
